@@ -384,7 +384,7 @@ var rest = {
       },
       "properties": {
         "name":"Barking Dog",
-        "description": "Comfort American food with a dogy drinking fountain",
+        "description": "Comfort American food with a doggy drinking fountain",
         "address": "1678 Third Ave",
         "city": " New York NY",
         "country": "United States",
