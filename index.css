@@ -1,0 +1,71 @@
+h3{
+  left:0;
+  line-height:300px;
+  margin-top:-400px;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  width: 100%;
+  font-family:verdana;
+  position: absolute;
+  left: 0;
+  top: 40%;
+  width: 150%;
+  text-align: center;
+  font-size: 19px;
+}
+body {
+
+   background-image: url("flowers.jpg");
+   background-size: cover;
+   margin: 0px 0px 0px 0px;
+   background-repeat: no-repeat;
+}
+
+.container {
+   margin: 0px 0px 0px 0px;
+}
+/* .center {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+} */
+  /* font-family: verdana;
+  font-size: 1000%; */
+  /* color: #0097a7;
+} */
+
+/* h3 {
+  font-family:verdana;
+  font-size: 1000%;
+  style="color:#0097a7;
+ } */
+
+
+<<<<<<< HEAD
+=======
+   background-image: url("flowers.jpg");
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+   background-color: #464646;
+   margin: 0px 0px 0px 0px;
+   background-repeat: no-repeat;
+}
+
+.container {
+   margin: 0px 0px 0px 0px;
+}
+>>>>>>> 8fc9ecf056021f3ab0fbe2cfc1234688aef9e9b0
+
+/* <style>
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+</style> */

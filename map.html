@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="icon" sizes="180x180" href="apple-touch-icon.png">
+  <meta charset='utf-8' />
+  <title>Exploradora - Map</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.0/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="map.css">
+  <!-- Lobster Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+  <!-- Bootstrap CSS & JS-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.1/mapbox-gl-geocoder.css' type='text/css' />
+
+  <script src='https://unpkg.com/es6-promise@4.2.4/dist/es6-promise.auto.min.js'></script>
+  <script src="https://unpkg.com/@mapbox/mapbox-sdk/umd/mapbox-sdk.min.js"></script>
+  <script src="map0.js"></script>
+  <style>
+    .nav-link{
+      font-family: helvetica neue;
+      font-weight: 200;
+      letter-spacing: .5px;
+    }
+    button{
+      font-family: 'Lobster', cursive;
+    }
+  </style>
+</head>
+<link rel="icon" sizes="180x180" href="apple-touch-icon.png">
+
+<body>
+  <!-- Navbar links & icon image -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: rgb(205,255,221); background: linear-gradient(207deg, rgba(205,255,221,1) 6%, rgba(255,242,206,1) 58%, rgba(255,240,209,1) 67%, rgba(255,224,233,1) 97%, rgba(255,224,233,1) 100%);" >
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" style="font-family: 'Lobster', cursive;" href="index.html">Exploradora</a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-right">
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Map</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="faq.html">FAQ<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="suggestions.html">Suggestions<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+ <div id='map' class="Map" style='width: 72%; height: 94%;'></div>
+
+
+ <div class='sidebar'>
+  <div class='heading'></div>
+
+<center><div id= "purpose">Here you can discover the different places that locals like to visit! </div></center>
+<center><div id= "question">What would you like to explore?</div></center>
+
+<div id="thirdback">
+
+  <button id="bakery" type="button">Bakeries</button>
+
+  <button id="Green" type="button">Green Spaces</button>
+</div>
+<div id="thirdback">
+  <button id="Library" type="button">Libraries</button>
+  <button id="Restaurants" type="button">Restaurants</button>
+</div>
+
+<div id='listings' class='listings'></div>
+</div>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta charset="utf-8">
+    <!-- Lobster Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS & JS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title> Exploradora - Suggest a Location</title>
+    <style>
+      .nav-link{
+        font-family: helvetica neue;
+        font-weight: 200;
+        letter-spacing: .5px;
+      }
+      .display-1{
+        font-size: 250%;
+      }
+    </style>
+
+  </head>
+  <link rel="icon" sizes="180x180" href="apple-touch-icon.png">
+  <body>
+
+    <!-- Navbar links & icon image -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: rgb(205,255,221); background: linear-gradient(207deg, rgba(205,255,221,1) 6%, rgba(255,242,206,1) 58%, rgba(255,240,209,1) 67%, rgba(255,224,233,1) 97%, rgba(255,224,233,1) 100%);" >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" style="font-family: 'Lobster', cursive;" href="index.html">Exploradora</a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ<span class="sr-only">/span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Suggestions<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<div class="jumbotron">
+    <div class="container" style="margin-top: 60px; font-family: helvetica neue; ">
+      <h1 class="display-1" >Suggest a Location</h1>
+    </div>
+  </div>
+
+    <!-- Actual suggestion form -->
+
+ <div class="container">
+    <form class="was-validated">
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer01">Your name</label>
+      <input type="text" class="form-control" id="validationServer01" placeholder="Your name" required>
+      <div class="valid-feedback">  Looks good!  </div>
+      <div class="invalid-feedback">Please enter your name.</div>
+
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationServer02">Email</label>
+      <input type="email" class="form-control" id="validationServer02" placeholder="Email"  required>
+      <div class="valid-feedback">  Looks good! </div>
+      <div class="invalid-feedback">Please enter a valid email.</div>
+
+    </div>
+  </div>
+  <div class="form-row">
+    <div class="col-md-6 mb-3">
+      <label for="validationServer01">Name of Location</label>
+      <input type="text" class="form-control" id="validationServer01" placeholder="Location" required>
+      <div class="valid-feedback">  Looks good!</div>
+      <div class="invalid-feedback">Please choose a location name.</div>
+    </div>
+    <div class="col-md-6 mb-3">
+      <label for="validationServer03">Location Address</label>
+      <input type="text" class="form-control" id="validationServer03" placeholder="Address" required>
+      <div class="invalid-feedback"> Please provide a valid address. </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Location description:</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+    <div class="invalid-feedback">Please enter a comment.</div>
+  </div>
+
+  <div class="form-group">
+    <select class="custom-select" required>
+      <option value="">Location Type</option>
+      <option value="1">Bakery</option>
+      <option value="2">Library</option>
+      <option value="3">Green Space</option>
+      <option value="4">Restaurant</option>
+      <option value="5">Other ( specify in description )</option>
+    </select>
+    <div class="valid-feedback">Looks good!</div>
+    <div class="invalid-feedback">Please choose a location type.</div>
+  </div>
+  <center><button class="btn" style="background: rgb(205,255,221); background: linear-gradient(207deg, rgba(205,255,221,1) 6%, rgba(255,242,206,1) 58%, rgba(255,240,209,1) 67%, rgba(255,224,233,1) 97%, rgba(255,224,233,1) 100%); border: 1px solid black;">Submit form</button></center>
+
+
+
+</form>
+
+</div>
+  </body>
+</html>

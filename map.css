@@ -1,0 +1,225 @@
+.Map {
+    position: absolute;
+
+    top: 7%;
+    left: 28%;
+
+    }
+
+.markerbake {
+    display: block;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    width: 28px;
+    height: 73px;
+    }
+
+body {
+  color: #404040;
+  font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#purpose{
+  background:#ffe0e9;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  padding: 25px;
+}
+
+#question{
+  /* background: #cdffdd; */
+  background:#fff2ce;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1px;
+  padding: 25px;
+
+}
+#thirdback{
+  background:#fff2ce;
+}
+#bakery{
+  background:#ffdac1;
+  margin-left: 70px;
+}
+
+#Green{
+  background:#cdffdd;
+  margin-left:30px;
+}
+#Library{
+  background:#ecd4ff;
+  margin-top:20px;
+  margin-left: 80px;
+  margin-bottom:20px;
+}
+
+#Restaurants{
+background:#ffb7b2;
+  margin-left:30px;
+  margin-bottom:20px;
+}
+
+    a {
+      color: #404040;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: #101010;
+    }
+
+    .sidebar {
+      position: absolute;
+      width: 28%;
+      height: 73%;
+      top: 0;
+      left: 0;
+      overflow: visible;
+      border-right: 1px solid rgba(10, 0, 0, 0.25);
+    }
+
+    .pad2 {
+      padding: 20px;
+    }
+
+    .map {
+      position: absolute;
+      left: 28%;
+      width: 66.6666%;
+      top: 0;
+      bottom: 0;
+    }
+
+    .heading {
+      background: #fff;
+      border-bottom: 1px solid #eee;
+      padding:  28px;
+    }
+
+    .listings {
+
+      overflow: auto;
+      padding-bottom: 60px;
+      background: #cdffdd;
+      height:82%;
+
+
+    }
+
+    .listings .item {
+      display: block;
+      border-bottom: 1px solid #cdffdd;
+      padding: 10px;
+      text-decoration: none;
+      margin-left: 70px;
+    }
+
+    .listings .item:last-child { border-bottom: none; }
+
+    .listings .item .title {
+      display: block;
+      color: #00853e;
+      font-weight: 700;
+    }
+
+    .listings .item .title small { font-weight: 400; }
+
+    .listings .item.active .title,
+    .listings .item .title:hover { color: #8cc63f; }
+
+    .listings .item.active {
+      background-color: #f8f8f8;
+    }
+
+    ::-webkit-scrollbar {
+      width: 3px;
+      height: 3px;
+      border-left: 0;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    ::-webkit-scrollbar-track {
+      background: none;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #00853e;
+      border-radius: 0;
+    }
+
+    .clearfix { display: block; }
+
+    .clearfix::after {
+      content: '.';
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+
+
+
+/* Marker tweaks */
+    .mapboxgl-popup-close-button {
+      display: none;
+    }
+
+    .mapboxgl-popup-content {
+      font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+      padding: 0;
+      width: 280px;
+      text-align: center;
+    }
+
+    .mapboxgl-popup-content-wrapper {
+      padding: 1%;
+    }
+
+    .mapboxgl-popup-content h3 {
+      background: rgb(205,255,221); background: linear-gradient(207deg, rgba(205,255,221,1) 6%, rgba(255,242,206,1) 58%, rgba(255,240,209,1) 67%, rgba(255,224,233,1) 97%, rgba(255,224,233,1) 100%);
+      color: #404040;
+      margin: 0;
+      display: block;
+      padding: 10px;
+      border-radius: 3px 3px 0 0;
+      font-weight: 500;
+      margin-top: -15px;
+      font-family: 'Lobster', cursive;
+      text-align: center;
+    }
+
+    .mapboxgl-popup-content h4 {
+      margin: 0;
+      display: block;
+      padding: 10px;
+      font-weight: 300;
+    }
+
+    .mapboxgl-popup-content div {
+      padding: 10px;
+    }
+
+    .mapboxgl-container .leaflet-marker-icon {
+      cursor: pointer;
+    }
+
+    .mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+      margin-top: 15px;
+    }
+
+    .mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+      border-bottom-color: #91c949;
+    }

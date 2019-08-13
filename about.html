@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta charset="utf-8">
+    <!-- Lobster Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS & JS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .nav-link{
+          font-family: helvetica neue;
+          font-weight: 200;
+          letter-spacing: .5px;
+        }
+        .imagebox{
+            position: relative;
+            width:19.8%;
+            height: 10%;
+            background-size: cover;
+            overflow: hidden;
+        }
+        .imagebox img{
+            width: 100%;
+            transition: .5s;
+        }
+        .main-content{
+            font-family: helvetica neue;
+            font-weight: 400;
+            letter-spacing: .5px;
+            font-size:  50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            transition: .5s;
+        }
+        .main-content:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            transform: translateX(-100%) scale(1) skew(-45deg);
+            transition: .5s;
+        }
+        .content{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 30px 50px;
+            text-align: center;
+        }
+        .content h1{
+            padding: 0px;
+            color: #fff;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Lobster', cursive;
+            font-weight: 200;
+            letter-spacing: .5px;
+            transform: translateY(-100%) scale(0);
+            transition: .5s;
+        }
+        .imagebox:hover .content h1{
+            transform: translateY(0) scale(1);
+        }
+        .imagebox:hover .content p{
+            transform: scale(1);
+            opacity: 1;
+        }
+        .imagebox:hover img{
+             transform: scale(1.5) translateX(5%);
+             transition: .5s;
+        }
+        .imagebox:hover .main-content:before{
+            opacity: 1;
+            background: rgba(255,224,233,.3);
+            transform: translateX(0) scale(1) skew(-45deg);
+
+        }
+        .display-1{
+          font-size: 250%;
+        }
+        .innercont{
+          padding-left:15%;
+          padding-right: 15%;
+          padding-top: 5%;
+          padding-bottom: 5%;
+          font-family: helvetica neue;
+          font-weight: 200;
+          font-size: 20px;
+          letter-spacing: .5px;
+
+        }
+    </style>
+    <title>Exploradora - About</title>
+  </head>
+  <link rel="icon" sizes="180x180" href="apple-touch-icon.png">
+  <body>
+    <!-- Navbar links & icon image -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: rgb(205,255,221); background: linear-gradient(207deg, rgba(205,255,221,1) 6%, rgba(255,242,206,1) 58%, rgba(255,240,209,1) 67%, rgba(255,224,233,1) 97%, rgba(255,224,233,1) 100%);" >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" style="font-family: 'Lobster', cursive;" href="index.html">Exploradora</a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-right">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">Map</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="faq.html">FAQ<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="suggestions.html">Suggestions<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron" style="margin-bottom:0px;">
+        <div class="container" style="margin-top: 60px; font-family: helvetica neue; ">
+          <h1 class="display-1" >About Exploradora</h1>
+        </div>
+    </div>
+    <div class="innercont">
+      Exploradora is a tool that can help both tourists and locals alike
+      find niche spots in their area, like cute bakeries or libraries.
+      It's especially important for people in large cities to see green spaces
+      within the concrete jungles they're in. Seeing nature is
+      <a href="https://greatergood.berkeley.edu/article/item/how_nature_makes_you_kinder_happier_more_creative" target="_blank">extremely</a>
+      <a href="https://www.psychologytoday.com/us/blog/the-moment-youth/201403/does-nature-make-us-happy" target="_blank">beneficial</a>
+      <a href="https://time.com/4662650/nature-happiness-stress/" target="_blank">to our health</a>, and we want people to go out and explore.
+      We hope our website fulfills this purpose and encourages people to go out and explore their surroundings.
+
+    </div>
+    <div class="jumbotron" style="margin-bottom:0px;">
+        <div class="container" style="font-family: helvetica neue; ">
+          <h1 class="display-1" >About the Developers</h1>
+        </div>
+    </div>
+    <div class="innercont">
+      We're all from the Girls Who Code Summer Internment Program at Viacom ( Thank you! ) and we come from different backgrounds. Click on our pictures to learn more about us as individuals.
+    </div>
+    <div class="row">
+    <!-- Fatiah -->
+    <div class="imagebox">
+      <a href="fatiah.html">
+        <img src="fatiah.jpg" alt="">
+        <div class="main-content">
+            <div class="content">
+                <h1>Fatiah</h1>
+            </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Ashley -->
+    <div class="imagebox">
+      <a href="ashley.html">
+        <img src="profilepic.jpg" alt="">
+        <div class="main-content">
+            <div class="content">
+                <h1>Ashley</h1>
+            </div>
+        </div>
+      </a>
+    </div>
+    <!-- Kiki -->
+    <div class="imagebox">
+      <a href="kiki.html">
+        <img src="kiki.png" alt="">
+        <div class="main-content">
+            <div class="content">
+                <h1>Kiki</h1>
+            </div>
+        </div>
+      </a>
+    </div>
+    <!-- Nylah -->
+    <div class="imagebox">
+      <a href="nylah.html">
+        <img src="itsme.jpg" alt="">
+        <div class="main-content">
+            <div class="content">
+                <h1>Nylah</h1>
+            </div>
+        </div>
+      <a>
+    </div>
+    <!-- Gia -->
+    <div class="imagebox">
+      <a href="gia.html">
+        <img src="gia/marc.png" alt="">
+        <div class="main-content">
+              <div class="content">
+                  <h1>Giovanna</h1>
+              </div>
+          </div>
+      </a>
+    </div>
+  </div>
+  </body>
+</html>

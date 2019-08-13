@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" sizes="180x180" href="apple-touch-icon.png">
+    <meta charset="utf-8">
+    <!-- Lobster Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS & JS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+      .card-header{
+        background: rgb(205,255,221);
+        background: linear-gradient(207deg, rgba(205,255,221,1) 6%, rgba(255,242,206,1) 58%, rgba(255,240,209,1) 67%, rgba(255,224,233,1) 97%, rgba(255,224,233,1) 100%);
+      }
+      .btn{
+        font-family: helvetica neue;
+        font-weight: 200;
+        font-size: 90%;
+        color:black;
+        width:inherit;
+      }
+      .btn:hover{
+        color:black;
+      }
+      .nav-link{
+        font-family: helvetica neue;
+        font-weight: 200;
+        letter-spacing: .5px;
+      }
+      .display-1{
+        font-size: 250%;
+      }
+      .card-body{
+        font-size: 25px;
+      }
+      .innercont {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width:95%;
+        font-size: 20px;
+        font-family: helvetica neue;
+        font-weight: 200;
+      }
+    </style>
+
+    <title>Exploradora - FAQ</title>
+  </head>
+  <link rel="icon" sizes="180x180" href="apple-touch-icon.png">
+  <body>
+    <!-- Navbar links & icon image -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background: rgb(205,255,221); background: linear-gradient(207deg, rgba(205,255,221,1) 6%, rgba(255,242,206,1) 58%, rgba(255,240,209,1) 67%, rgba(255,224,233,1) 97%, rgba(255,224,233,1) 100%);" >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" style="font-family: 'Lobster', cursive;" href="index.html">Exploradora</a>
+
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 navbar-right">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="map.html">Map</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">FAQ<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="suggestions.html">Suggestions<span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="container" style="margin-top: 60px; font-family: helvetica neue; font-size: 100%;">
+          <h1 class="display-1" >Frequently Asked Questions</h1>
+        </div>
+      </div>
+    <div class="innercont">
+      Do you have any questions? Well, we've set up this Frequently Asked Questions page that will hopefully answer any questions you have.
+    </div>
+      <div class="align-self-center">
+        <div class="accordion" id="accordionExample" style=" margin-top: 5%; display: block; margin-left: auto;  margin-right: auto; width:85%;">
+
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                  How do I use this website?
+                </button>
+              </h2>
+            </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample" style="">
+              <div class="card-body innercont">
+                Click on the map button and the map will load. It may take a little while, but it <i>will</i> fully appear.
+              You can click on any of the buttons ( ex. Bakeries, Libraries, etc.) and the map will automaticallly show locations of the category selected.
+                To move the map around, you'll need to use the mouse/touchpad to find locations for other places.
+                <br>
+                <br>
+                Click on a marker in order to make its description appear.
+                You can also click on any of the names on the sidebar and you'll be taken its location. <br>
+                To zoom into the map drag two fingers down on the touchpad, to zoom out you do the opposite. If you're using a mouse, use the scroller to zoom in or out.                <br>
+                <br>
+                If you want to clear out the map, click on one of the buttons twice and the map will be clear.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Is this website mobile-friendly?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" >
+                <div class="card-body innercont">
+                Exploradora is currently not mobile-friendly and looks best on a laptop/desktop. This is a feature we are looking to implement in the near future.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Am I able to suggest a place to visit?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" style="">
+                <div class="card-body innercont">
+                It's a work in progress, but you can't suggest a place for now.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Why is this website useful?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample" style="">
+                <div class="card-body innercont">
+                 It's useful because you can chose a category and automatically you will get a variety of locations.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingFive">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Why should people go to the places suggested?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample" style="">
+                <div class="card-body innercont">
+                Users should go to the places suggested because it's locally suggested and it's not very common for tourists to visit local spots since they haven't heard of them. These places are curated by locals who love their community.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSix">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Are these locations accurate?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample" style="">
+                <div class="card-body innercont">
+                  yes, these locations are accurate.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingSeven">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                    Can I search for a place that wasn't suggested?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample" style="">
+                <div class="card-body innercont">
+                  A user can search for a place to visit however, the user will not recieve any directions just where it's located.
+                </div>
+              </div>
+            </div>
+
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingNine">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                Am I able to look up a place that wasn't suggested?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseNine" class="collapse" aria-labelledby="headingNine" data-parent="#accordionExample" style="">
+                <div class="card-body innercont">
+                  You can look at locations around the globe, however we have currently curated the Exploradora experience to New York City, specifically Manhattan.
+                  <br>
+                  <br>
+                  We are working on implementing a suggestion feature where users can email us and give us suggestions of places in their area that they'd like to add to Exploradora.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTen">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                    Will the map give me directions to the destination I find on Exploradora?
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample" style="">
+                <div class="card-body innercont">
+                  No. You will have to use a navigation app or your own intuition to get to your destination.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </body>
+</html>
