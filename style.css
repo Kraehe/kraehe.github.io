@@ -1,0 +1,18 @@
+body {
+    background-color: black;
+    color: rgb(132, 0, 255);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: '3';
+    text-align: center;
+}
+
+h1 {
+    color: rgb(187, 241, 104);
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+b {
+    color: rgb(187, 241, 104);
+    font-family: 'Courier New', Courier, monospace;
+}
